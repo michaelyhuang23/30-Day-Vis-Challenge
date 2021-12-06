@@ -1,0 +1,35 @@
+*{
+	margin: 15px;
+}
+
+
+/*
+pictogram section
+*/
+
+#pictogram svg {
+    overflow:none;
+    padding:10px;
+    width:60%;
+    height:60%;
+}
+
+#pictogram text {
+    fill:#bb6d82;
+    font-size:12px;
+    font-family:sans-serif,Helvetica,Arial;
+    font-weight:bold;
+}
+
+#pictogram .iconPlain {
+    fill:#a7a59b;   
+}
+
+#pictogram .iconSelected {
+    fill:#bb6d82;   
+}
+
+#pictogram rect {
+    fill:#ffffff;   
+}
+

@@ -1,0 +1,49 @@
+<!--Normal tag (one time)-->
+<!DOCTYPE html>
+<!--Container tags-->
+<html>
+<!--head: import resources, setting-->
+
+<head>
+    <!--define metadata: charset, description-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Data Visualization 30 Day Challenge">
+    <meta name="author" content="Michael Huang">
+    <meta name="keywords"
+        content="Michael Huang, Phillips Academy, CSC 630, Data Visualization">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+
+    <!--title of website displayed in top bar-->
+    <title>Data Visualization 30 Day Challenge</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Data Visualization Challenge</h1>
+        <div id='part-and-whole'> 
+            <h2>1st Day -- Part and Whole</h2>
+            <p>Didn't think of something interesting, so politics data I guess...</p>
+            <figure>
+                <img src="images/partisenship.png" alt="Partisenship Split" style="width:60%;">
+                <figcaption>Partisenship Split in US from some ancient data source (wikipedia)</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mass-vax.png" alt="Vaccination Status" style="width:60%;" title="Vaccination Status Split in Massachussetts. calculated based on an ancient census">
+                <figcaption>Vaccination Status Split in Massachussetts. calculated based on an ancient census</figcaption>
+            </figure>
+        </div>
+        <div id='pictogram'>
+            <h2>2nd Day -- Pictogram</h2>
+            <figure>
+                <script src="data_gen_code/3d_pictogram.js"></script>
+                <figcaption>40% of people get cancer in their lives</figcaption>
+            </figure>
+        </div>
+    </main>
+</body>
+
+</html>
