@@ -1,0 +1,20 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from collections import Counter
+
+data = pd.read_csv('top10s.csv', encoding="ISO-8859-1")
+
+counters = [Counter() for i in range(10)]
+for i, row in data.iterrows():
+    yeari = row['year'] - 2010
+    print(yeari)
+    counters[yeari][row['artist']]+=1
+
+print(counters[2])
+
+all_singers = [counter.keys() for counter in counters]
+singers = set([])
+[singers = singer.union(singer_group) for singer_group in all_singers]
+
+[ for singer in singers]
